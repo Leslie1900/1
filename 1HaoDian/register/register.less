@@ -1,0 +1,133 @@
+.box {
+    width   : 80%;
+    margin  : 10px auto;
+    position: relative;
+
+}
+
+.logo {
+    margin-top   : 15px;
+    margin-bottom: 5px;
+    margin-left  : 50px;
+
+    img {
+        width : 170px;
+        height: 60px;
+    }
+}
+
+.nav::after {
+    content   : "";
+    display   : block;
+    width     : 100%;
+    height    : 6px;
+    background: linear-gradient(top, black, white);
+    background: -webkit-linear-gradient(top, #b4b4b4, white);
+}
+
+.nav {
+    .logo_right {
+        margin-right: 15px;
+
+        span {
+            color    : #B4B4B4;
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+
+        .help {
+            border     : 1px solid #B4B4B4;
+            margin-left: 10px;
+            font-size  : 14px;
+
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.register_mid {
+    text-align: center;
+    width     : 50%;
+    margin    : 30px auto;
+
+    p {
+        margin-left   : 150px;
+        width         : 100%;
+        margin-top    : 10px;
+        text-align    : left;
+        // border     : 1px solid red;
+
+        span {
+            float    : left;
+            padding  : 14px;
+            font-size: 14px;
+        }
+
+        input {
+            width  : 300px;
+            padding: 13px;
+            float  : left;
+        }
+    }
+
+    p:nth-of-type(2) {
+        input {
+            width: 140px;
+
+        }
+
+        button {
+            width           : 145px;
+            padding         : 14px;
+            margin-left     : 15px;
+            background-color: #57565F;
+            border          : none;
+            border-radius   : 2px;
+            color           : white;
+            float           : left;
+        }
+    }
+
+    p:nth-last-of-type(2) {
+        span {
+            font-size : 13px;
+            color     : #9BA6B0;
+            text-align: center;
+            padding   : 0;
+
+        }
+    }
+
+    p:last-of-type {
+        input {
+            width           : 300px;
+            padding         : 10px;
+            background-color: #FF3C3C;
+            outline         : none;
+            border          : none;
+            border-radius   : 2px;
+            color           : white;
+        }
+    }
+
+
+}
+
+.footer {
+    position : absolute;
+    left     : 50%;
+    top      : 110%;
+    transform: translateX(-50%);
+
+    p {
+        font-size : 14px;
+        margin-top: 10px;
+        color     : #b4b4b4;
+        text-align: center;
+    }
+}

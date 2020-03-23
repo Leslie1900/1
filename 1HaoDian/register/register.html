@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="register.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <!-- logo头部 -->
+        <div class="nav clearfix">
+            <div class="logo fl">
+                <img src="../images/loginlogo.jpg" alt="">
+            </div>
+            <div class="logo_right fr clearfix">
+                <span>您好，欢迎光临1号店！</span>
+                <a href="../login/login.html">请登录</a>
+                <div class="help fr">
+                    <img src="../images/runbun.png" alt="">&nbsp;帮助中心&nbsp;<img src="../images/turnb.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="register_mid">
+            <h2>1号店注册</h2>
+            <form action="success.html" method="POST" onsubmit="return isOk" enctype="multipart/form-data">
+                <p class="clearfix"><input type="text" required oninvalid="setCustomValidity('手机号不能为空')" oninput="setCustomValidity('')" placeholder="手机号">&nbsp;<span></span></p>
+                <p class="clearfix"><input type="text" required placeholder="验证码">&nbsp;<button id="btn"
+                        onclick="send()">获取验证码</button>&nbsp;<span></span></p>
+                <p class="clearfix"><input type="password" required placeholder="设置密码">&nbsp;<span></span></p>
+                <p class="clearfix"><input type="password" required placeholder="确认密码">&nbsp;<span></span></p>
+                <p class="clearfix"><span>点击注册，表示您同意1号店<a href="#">《注册协议》</a></span></p>
+                <p><input type="submit" id="goload" value="同意协议并注册"></p>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer_f">
+                <p>沪ICP备13044278 | 合字B1.B2-20130004 | 营业执照</p>
+                <p>Copyright&copy;1号店网上超市2007-2016,All Right Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./register.js"></script>
+
+</html>
